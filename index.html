@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Revoluciona lo digital" />
+<meta property="og:description" content="Potenciamos tu marca con estrategias digitales innovadoras." />
+<meta property="og:image" content="https://www.r3voluxion.com/Logo/R3VOLUTION.webp" />
+<meta property="og:url" content="https://www.r3voluxion.com/" />
+<meta property="og:type" content="website" />
+
+    <link rel="icon" href="Logo/icon_logo_white.webp" type="image/x-icon">
+    <title>R3voluxion</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/index.css">
+<body>
+    <header>
+        <img src="Logo\r3volution_BLACK.webp" alt="R3voluxion" width="200">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="home.html">Quiénes Somos</a></li>
+                <li><a href="team.html">Nuestro Equipo</a></li>
+                <div class="social-icons mobile-only">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <br>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </nav>
+        <div class="social-icons desktop-only">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </header>
+    <div class="overlay" onclick="toggleMenu()"></div>
+    <section class="hero">
+        <h1 id="typing-title"></h1>
+        <br>
+        <p id="typing-text" class="typing-text"></p>
+        <br>
+        <div class="buttons">
+            <a href="#proyectos" class="btn btn-primary">Conoce nuestros proyectos</a>
+        </div>
+    </section>
+
+    <section class="innovation">
+        <div class="text">
+            <h2>Innovación en acción</h2>
+            <br>
+            <p>Mira cómo nuestras soluciones están revolucionando industrias y creando un impacto duradero.</p>
+        </div>
+        <div class="video-container">
+            <video id="video" autoplay loop playsinline muted controls>
+                <source src="Videos\008 - Entrevista 16x9 ALTA.webm" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+
+    <section class="media-section">
+        <div class="filter-buttons">
+            <button onclick="showCategory('videos')">Videos</button>
+            <button onclick="showCategory('reels')">Reels</button>
+            <button onclick="showCategory('fotos')">Fotos</button>
+        </div>
+
+        <div id="videos" class="media-grid">
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 014311.webp">
+                <source src="Videos\007 - Titanic 16x9 ALTA h264.webm" type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-06 0116698.webp">
+                <source src="Videos\PROYECTO GOLF RIMAC 2023.mp4" type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 0125458.webp">
+                <source src="Videos\Hallowen.mp4" type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 025236.webp">
+                <source src="Videos\EXPOMECANICA PERU 2024 FINAL 2.mp4" type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 025640.webp">
+                <source src="Videos\MOGGY.mp4" type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 025818.webp">
+                <source src="Videos\MATRIMONIO SUIZA.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="reels" class="media-grid-fotos" style="display: none;">
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 0116698.webp">
+                <source src="Videos\007 - Titanic 9x16 ALTA h264.mp4" type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 01t541.webp">
+                <source src="Videos\7B7-YBcM0LugvKQ.mp4 " type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 2266222.webp">
+                <source src="Videos\VIDEO 4 DR MONO JUNIO.mp4" type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 35s598.webp">
+                <source src="Videos\XNh4C4qWa9QzUTBXhJUG45k.mp4" type="video/mp4">
+            </video>
+            <video id="video" playsinline controls poster="Videos\Miniaturas\2025-03-05 012222.webp">
+                <source src="Videos\DISCOTECA MX.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="fotos" class="media-grid-fotos" style="display: none;">
+            <!--
+            <img src="https://www.formulatvempleo.com/images/empleo/articulos/0000/59_gEgvxYzoPe07cNU39JRm2ta6qs81i4kHF-f.jpg"
+                alt="Fotografía 1">
+            <img src="https://tuseteventos.com/wp-content/uploads/2021/03/servicios-audiovisuales-en-barcelona-4.jpg"
+                alt="Fotografía 2">
+            <img src="https://www.formulatvempleo.com/images/empleo/articulos/0000/59_gEgvxYzoPe07cNU39JRm2ta6qs81i4kHF-f.jpg"
+                alt="Fotografía 1">
+            <img src="https://tuseteventos.com/wp-content/uploads/2021/03/servicios-audiovisuales-en-barcelona-4.jpg"
+                alt="Fotografía 2">
+                        -->
+        </div>
+    
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <img src="Logo\r3volution_BLACK.webp" alt="R3voluxion">
+            </div>
+
+            <div class="footer-content">
+                <nav class="footer-nav">
+                    <a href="/">Inicio</a>
+                    <a href="home.html">Quiénes Somos</a>
+                    <a href="team.html">Nuestro Equipo</a>
+                    <a href="https://wa.me/51987819842?text=Hola">Contáctanos</a>
+                </nav>
+
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-line">
+
+        <p class="footer-copy">&copy; 2025 R3voluxion. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <a href="https://wa.me/5199999999?text=Hola" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
